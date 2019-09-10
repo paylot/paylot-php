@@ -33,6 +33,9 @@ To use, follow the following.
 Confirm that your server can conclude a TLSv1.2 connection to Paylot's servers. Most up-to-date software have this capability. Contact your service provider for guidance if you have any SSL errors.
 *Don't disable SSL peer verification!*
 
+### 0b. Secret Key
+Please, ensure you have your Paylot secret key handy. You can obtain that from your business profile.
+
 ### 1. Verify Transaction
 After a successful transaction, please verify the transaction before giving value.
 
