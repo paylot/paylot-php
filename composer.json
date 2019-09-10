@@ -1,0 +1,31 @@
+{
+    "name": "paylot/paylot-php",
+    "description": "A PHP Wrapper for Paylot API",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Chidozie Ogbo",
+            "email": "dosky.ogbo91@gmail.com"
+        }
+    ],
+	"homepage": "https://github.com/paylot/paylot-php",
+    "require": {
+		"php": ">=5.3.0",
+        "guzzlehttp/guzzle": "^6.3",
+        "vlucas/phpdotenv": "^3.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Paylot\\": "src/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Paylot\\Test\\": "tests/"
+        }
+    }
+}
