@@ -13,7 +13,7 @@ class Paylot
     {
         if (is_null($secretKey))
             throw new PaylotException('No secret key provided');
-        
+
         $this->secretKey = $secretKey;
     }
 

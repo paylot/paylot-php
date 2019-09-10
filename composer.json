@@ -12,8 +12,7 @@
 	"homepage": "https://github.com/paylot/paylot-php",
     "require": {
 		"php": ">=5.3.0",
-        "guzzlehttp/guzzle": "^6.3",
-        "vlucas/phpdotenv": "^3.5"
+        "guzzlehttp/guzzle": "^6.3"
     },
     "autoload": {
         "psr-4": {
