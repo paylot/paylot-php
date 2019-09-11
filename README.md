@@ -51,7 +51,7 @@ After a successful transaction, please verify the transaction before giving valu
     {
       // verify using the library
       $tranx = $paylot->transaction->verify($reference);
-    } catch(\Paylot\Exceptions\ApiException $e){
+    } catch(\Paylot\Exceptions\ApiResponseException $e){
       print_r($e->getResponseObject());
       die($e->getMessage());
     }
