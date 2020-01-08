@@ -19,13 +19,14 @@ class Transaction
     /**
      * Transaction constructor.
      * @param $secretKey
+     * @param $options
      */
-    public function __construct($secretKey)
+    public function __construct($secretKey, $options = [])
     {
-        $this->client = new Client([
+        $this->client = new Client(array_merge($options, [
             'base_uri' => 'https://api.paylot.co/',
             'headers' => ['Authorization' => "Bearer $secretKey"]
-        ]);
+        ]));
     }
 
     public function verify($reference)
